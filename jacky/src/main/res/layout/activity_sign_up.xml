@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background1"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="個人資料"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/estPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="請輸入電話號碼"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/estPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="請輸入密碼"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:inputType="textPassword"
+           />
+
+        <EditText
+            android:id="@+id/estName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="請輸入姓名"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignUP"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:text="註冊"
+            android:textSize="20dp"
+            app:shadowHeight="50dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
